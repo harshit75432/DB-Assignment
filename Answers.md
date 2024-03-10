@@ -1,0 +1,7 @@
+1. Explain the relationship between the "Product" and "Product_Category" entities from the above diagram.
+
+Answer => In a typical relational database model, "Product" and "Product_Category" would likely be represented as tables, with "Product" storing information about individual products and "Product_Category" storing information about different categories or types of products. The relationship between these two entities would typically be a one-to-many relationship, meaning that one product category can have many products associated with it, but each product can only belong to one category. This relationship is often implemented using foreign keys, where the "Product" table would contain a foreign key column referencing the primary key of the "Product_Category" table. This foreign key establishes the link between products and their corresponding categories.
+
+2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
+
+Answer => To ensure that each product in the "Product" table has a valid category assigned to it, you can enforce referential integrity using foreign key constraints. Foreign key constraints ensure that the values in the referencing column (in this case, the "Category_ID" column in the "Product" table) match the values in the referenced column (the "Category_ID" column in the "Product_Category" table).
